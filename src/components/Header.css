@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #ddd;
+  bottom: 7%;
+  left: 0;
+  right: 0;
+  /* width: 100%; */
+  z-index: -1;
+}
+
+.header__title {
+  font-size: 40px;
+}
+
+.header__text {
+  display: inline-block;
+  background-color: aliceblue;
+  z-index: 1;
+  margin: 0;
+}
