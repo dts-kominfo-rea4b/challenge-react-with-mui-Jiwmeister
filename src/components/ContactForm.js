@@ -4,11 +4,8 @@
 // https://mui.com/material-ui/react-card/#basic-card
 import React, { useState } from "react"
 import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
-import Stack from '@mui/material/Stack'
 
 export const ContactForm = ({ handleSubmit }) => {
   // Form berisi name, phone, email, dan photo url
