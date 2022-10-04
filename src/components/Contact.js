@@ -17,15 +17,13 @@ export const Contact = ({ data }) => {
   return (
 
     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }} dense>
-      {data.map((contact, index) => {
-        return (
-          <ListItem key={index} alignItems="flex-start" disablePadding>
+          <ListItem alignItems="flex-start" disablePadding>
             <ListItemButton>
               <ListItemAvatar>
-                <Avatar alt={contact.name} src={contact.photo} />
+                <Avatar alt={data.name} src={data.photo} />
               </ListItemAvatar>
               <ListItemText
-                primary={contact.name}
+                primary={data.name}
                 secondary={
                   <React.Fragment>
                     <Typography
@@ -34,17 +32,15 @@ export const Contact = ({ data }) => {
                       variant="body2"
                       color="text.primary"
                     >
-                      {contact.phone}
+                      {data.phone}
                       <br />
-                      {contact.email}
+                      {data.email}
                     </Typography>
                   </React.Fragment>
                 }
               />
             </ListItemButton>
           </ListItem>
-        )
-      })}
     </List>
   );
 };

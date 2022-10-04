@@ -49,7 +49,9 @@ const App = () => {
             </Grid>
             <Grid md={4}>
               <Item>
-                <Contact data={contacts} />
+                {contacts.map((contact, index) =>
+                  <Contact key={index} data={contact} />
+                )}
               </Item>
             </Grid>
           </Grid>
